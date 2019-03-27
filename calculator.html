@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1> Dont Divide By Zero!</h1>
+    <div class="container">
+        <div id="screenBar1">
+            <input type="text" id="answer" readonly="readonly">
+            <input type="text" id="input" placeholder="0" readonly="readonly">
+        </div>
+        <div id="buttons">
+            <div class="row">
+                <input type="button" value="AC" class="btn silver" onclick="clearScreen()">
+                <input type="button" value="+/-" class="btn silver" onclick="getOperand('+/-')">
+                <input type="button" value="%" class="btn silver" onclick="precentage()">
+                <input type="button" value="÷" class="btn orange" onclick="getOperand('/')">
+            </div>
+            <div class="row">
+                <input type="button" value="7" class="btn" onclick="getNumber(7)">
+                <input type="button" value="8" class="btn" onclick="getNumber(8)">
+                <input type="button" value="9" class="btn" onclick="getNumber(9)">
+                <input type="button" value="x" class="btn orange" onclick="getOperand('*')">
+            </div>
+            <div class="row">
+                <input type="button" value="4" class="btn" onclick="getNumber(4)">
+                <input type="button" value="5" class="btn" onclick="getNumber(5)">
+                <input type="button" value="6" class="btn" onclick="getNumber(6)">
+                <input type="button" value="-" class="btn orange" onclick="getOperand('-')">
+            </div>
+            <div class="row">
+                <input type="button" value="1" class="btn" onclick="getNumber(1)">
+                <input type="button" value="2" class="btn" onclick="getNumber(2)">
+                <input type="button" value="3" class="btn" onclick="getNumber(3)">
+                <input type="button" value="+" class="btn orange" onclick="getOperand('+')">
+            </div>
+            <div class="row">
+                <input type="button" value="0" class="btn" id="zeroBtn" onclick="getNumber(0)">
+                <input type="button" value="." class="btn" onclick="getOperand('.')">
+                <input type="button" value="=" class="btn orange" onclick="compute()">
+            </div>
+
+        </div>
+
+    </div>
+    <p>&copy Niv Blushinski</p>
+   
+    <script type="text/jacascript" src="calculator.js"></script>
+</body>
+
+</html>
